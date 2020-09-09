@@ -27,29 +27,17 @@ public class IdentityCard {
     private Long identityNo;
     private Integer no;
 
-    public Long getIdentityNo() {
-        return identityNo;
-    }
-
-    public void setIdentityNo(Long identityNo) {
-        this.identityNo = identityNo;
-    }
-
-    public Integer getNo() {
-        return no;
-    }
-
-    public void setNo(Integer no) {
-        this.no = no;
-    }
-
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof IdentityCard)) return false;
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof IdentityCard)) {
+            return false;
+        }
         IdentityCard that = (IdentityCard) o;
         return Objects.equals(identityNo, that.identityNo) &&
-                Objects.equals(no, that.no);
+            Objects.equals(no, that.no);
     }
 
     @Override

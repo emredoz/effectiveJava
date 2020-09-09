@@ -1,4 +1,4 @@
-package com.efectivejava.sorting;
+package com.efectivejava.comparable.sorting;
 
 import java.util.*;
 
