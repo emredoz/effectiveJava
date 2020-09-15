@@ -25,14 +25,16 @@ public class Phone implements Comparable<Phone> {
     }
 
     public static void main(String[] args) {
+        // Comparable arayüzü kullanılmadan TreeSet kullanılırsa hata alır.
+
         Set<Phone> phoneTreeSet = new TreeSet<>();
         Set<Phone> phoneHashSet = new HashSet<>();
         for (int i = 1;i<=10;i++){
             phoneTreeSet.add(new Phone(i));
             phoneHashSet.add(new Phone(i));
         }
-        System.out.println(phoneTreeSet);
-        System.out.println(phoneHashSet);
+        System.out.println("TreeSet: " +phoneTreeSet);
+        System.out.println("HashSet: "+ phoneHashSet);
 
         List<Phone> phoneList = new ArrayList<>(phoneTreeSet);
         Collections.sort(phoneList);

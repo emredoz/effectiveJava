@@ -1,6 +1,6 @@
 package com.efectivejava.builder;
 
-public class Serum {
+public class SerumIdeal {
     private final int water; //  required
     private final int sodiumIon; //  required
     private final int magnesium; // optional
@@ -44,12 +44,12 @@ public class Serum {
             return this;
         }
 
-        public Serum build(){
-            return new Serum(this);
+        public SerumIdeal build(){
+            return new SerumIdeal(this);
         }
     }
 
-    private Serum(Builder builder) {
+    private SerumIdeal(Builder builder) {
         this.water = builder.water;
         this.sodiumIon = builder.sodiumIon;
         this.magnesium = builder.magnesium;
@@ -71,7 +71,7 @@ public class Serum {
     }
 
     public static void main(String[] args) {
-        Serum serum = new Builder(240,12).magnesium(30).creatine(15).globulin(78).build();
-        System.out.println(serum);
+        SerumIdeal serumIdeal = new Builder(240,12).magnesium(30).creatine(15).globulin(78).build();
+        System.out.println(serumIdeal);
     }
 }

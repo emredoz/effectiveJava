@@ -1,6 +1,7 @@
 package com.efectivejava.utility;
 
 public class CustomerUtility {
+    // Utility sınıflardan yeni bir nesne türetilmesi istenmez.
 
     private CustomerUtility() {
         throw new RuntimeException();
