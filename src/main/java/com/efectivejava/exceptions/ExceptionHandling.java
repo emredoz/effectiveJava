@@ -1,4 +1,4 @@
-package com.efectivejava;
+package com.efectivejava.exceptions;
 
 public class ExceptionHandling {
 
@@ -10,7 +10,7 @@ public class ExceptionHandling {
         try {
             throw new Exception();
         } catch (Exception e) {
-            e.printStackTrace();
+           e.printStackTrace();
         }
         System.out.println("Exception handle edilmeli veya fırlatılmalıdır.");
     }
