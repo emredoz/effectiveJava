@@ -7,7 +7,6 @@ import java.io.IOException;
 public class Read {
 
     public void read() throws IOException {
-        // Closeable interface implemente eden classlarda kullanılabilir.
 
         try (BufferedReader bf = new BufferedReader(new FileReader("emre.txt"))) {
             bf.readLine();
